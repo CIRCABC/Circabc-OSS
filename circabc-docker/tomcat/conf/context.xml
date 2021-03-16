@@ -29,12 +29,12 @@
     <Manager pathname="" />
     -->
     <Resource name="jdbc/circabcDB" auth="Container" type="javax.sql.DataSource"
-			url="jdbc:mysql://db:3306/alfresco?allowMultiQueries=true" driverClassName="com.mysql.jdbc.Driver"
+			url="jdbc:mysql://db:3306/alfresco?allowMultiQueries=true&amp;autoReconnect=true" driverClassName="com.mysql.jdbc.Driver"
 			username="alfresco" password="alfresco" validationQuery="SELECT 1" 
 			factory="org.apache.tomcat.jdbc.pool.DataSourceFactory" />
     
     <Resource name="jdbc/circabcAuditDB" auth="Container" type="javax.sql.DataSource"
-			url="jdbc:mysql://db:3306/circabc_audit?allowMultiQueries=true" driverClassName="com.mysql.jdbc.Driver"
+			url="jdbc:mysql://db:3306/circabc_audit?allowMultiQueries=true&amp;autoReconnect=true" driverClassName="com.mysql.jdbc.Driver"
 			username="circabc_audit" password="circabc_audit" 
 			validationQuery="SELECT 1" />
 

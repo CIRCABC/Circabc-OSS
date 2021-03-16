@@ -7,7 +7,7 @@ describe("Create users", function () {
   });
 
   it("successfully created 5 users", function () {
-    for (var i = 1; i < 5; i++) {
+    for (var i = 1; i < 6; i++) {
       cy.visit("/me/roles", {
         failOnStatusCode: false,
       });

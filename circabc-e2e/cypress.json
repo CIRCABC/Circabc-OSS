@@ -6,7 +6,6 @@
     "circabc/login/login-page.spec.js",
     "circabc/logout/logout-page.spec.js",
     "circabc/user/create-page.spec.js",
-    "circabc/user/create-page-5user.spec.js",
     "circabc/header/create-page.spec.js",
     "circabc/category/create-page.spec.js",
     "circabc/interest-group/create-page.spec.js",
@@ -14,7 +13,10 @@
     "circabc/interest-group/create-page.spec.js",
     "circabc/library/upload-page.spec.js",
     "circabc/library/delete-all-page.spec.js",
-    "circabc/library/upload-page.spec.js"
+    "circabc/library/upload-page.spec.js",
+    "circabc/test-users/create-test-users.spec.js",
+    "circabc/test-users/create-test-common-interest-group.spec.js",
+    "circabc/test-users/create-test-private-interest-group.spec.js"
   ],
   "chromeWebSecurity": false,
   "viewportWidth": 1200,
