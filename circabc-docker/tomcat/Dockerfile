@@ -6,7 +6,7 @@ RUN ["rm", "-fr", "/usr/local/tomcat/webapps/manager"]
 
 COPY ./dist/circabc.war /usr/local/tomcat/webapps/ROOT.war
 COPY ./lib/ecas-weblogic-12.2.1-authprovider-4.26.3.jar /usr/local/tomcat/lib
-COPY ./lib/mysql-connector-java-5.1.48.jar /usr/local/tomcat/lib
+COPY ./lib/mariadb-java-client-2.7.2.jar /usr/local/tomcat/lib
 COPY ./conf/context.xml /usr/local/tomcat/conf/context.xml
 
 CMD ["/usr/local/tomcat/wait-for-it.sh","db:3306","--timeout=0","--strict", "--","catalina.sh", "run"]

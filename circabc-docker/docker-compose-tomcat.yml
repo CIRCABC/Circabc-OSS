@@ -2,7 +2,7 @@ version: "3"
 services:
   db:
     container_name: db
-    image: mysql:5.6
+    image: mariadb:latest
     ports:
       - "3306:3306"  
     environment:
@@ -26,6 +26,8 @@ services:
     image: tomcat-circabc
     ports:
       - "81:8080"
+    environment:
+      - CATALINA_OPTS="-Djava.awt.headless=true -Dfile.encoding=UTF-8 -server -Xms2048m -Xmx2048m -XX:NewSize=512m -XX:MaxNewSize=512m -XX:PermSize=512m -XX:MaxPermSize=512m -XX:+DisableExplicitGC"
     container_name: tomcat
     depends_on:
       - db
